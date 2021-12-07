@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 @Component
-public class ApplicationIdentifierFilter implements Filter {
+public class ApplicationIdentifierFilter implements javax.servlet.Filter {
     String uuid;
     public ApplicationIdentifierFilter() {
         uuid = UUID.randomUUID().toString();
